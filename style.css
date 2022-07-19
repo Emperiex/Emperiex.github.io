@@ -1,0 +1,695 @@
+/*---general rules for the whole website---*/
+body {
+    margin: 0;
+    padding: 0;
+    padding-top: 90px;
+    font-family: 'Orbitron', sans-serif, Arial, Helvetica, sans-serif;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the header/navigation-bar - on all pages---*/
+.header {
+    position: fixed;
+    display: flex;
+    flex: 1;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 90px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    z-index: 200;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for resizing logo---*/
+.logo {
+    width: 60px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for positioning the logo---*/ 
+.logo-box {
+    display: flex;
+    flex: 1;
+    margin-left: 300px;
+    left: 0px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the navigation menu in the header/nav-bar---*/
+.nav-menu {
+    display: flex;
+    flex: 1;
+    width: 800px;
+    margin-right: 350px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the text-box for the nav-menu---*/
+.nav-links {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 20px;
+    justify-content: center;
+    white-space: nowrap;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the text in the nav-menu---*/
+.nav-links a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the hover effect on the nav-menu---*/
+.nav-links :hover {
+    text-decoration: underline;
+    color: orange;
+    transition: 0.2s;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for "box" as in the page inside the box---*/
+.box {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    position: relative;
+    width: auto;
+    height: auto;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the background img---*/
+.background-img {
+    display: flex;
+    flex: 1;
+    position: absolute;
+    width: 100%;
+    height: auto;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the text-box at the frontpage---*/
+.frontpage-text-box {
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+    margin-top: 200px;
+    margin-left: 800px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the text at the frontpage---*/
+.frontpage-text {
+    color: orange;
+    font-size: 50px;
+    text-align: center;
+    white-space: nowrap;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for text-box for card 1---*/
+.info1-text-box {
+    margin-top: 700px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for card 1's text---*/ 
+.info1 {
+    z-index: 100;
+    font-size: 40px;
+    color: orange;
+    line-height: 100px;
+    text-align: center;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for text-box for card 2---*/
+.info2-text-box {
+    margin-top: 180px;
+    margin-left: 600px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for card 2's text---*/ 
+.info2 {
+    z-index: 100;
+    font-size: 35px;
+    color: orange;
+    line-height: 75px;
+    text-align: center;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for box containing "compete now"---*/ 
+.info2-2-text-box {
+    margin-top: 20px;
+    margin-left: 600px;
+    z-index: 100;
+    display: flex;
+    flex-direction: column;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for text "compete now"---*/ 
+.compete {
+    z-index: 100;
+    font-size: 35px;
+    font-weight: 900;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for hover effect on text "compete now"---*/ 
+.info2-2-text-box :hover {
+    text-decoration: underline;
+    color: orange;
+    transition: 0.2s;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for card3's box---*/
+.info3-box {
+    margin-top: 310px;
+    margin-left: 200px;
+    z-index: 100;
+    display: flex;
+    flex-direction: row;
+}
+
+/*----------INDEX.HTML-----------*/
+/*css for card3's text*/
+.info3-text {
+    color: rgb(27, 27, 27);
+    font-size: 35px;
+    line-height: 75px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the box containing twitch.img---*/
+.twitch-box {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for twitch.img---*/
+.twitch {
+    position: absolute;
+    width: 280px;
+    margin-top: 90px;
+    margin-left: 295px;
+    cursor: pointer;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for the box containing youtube.img---*/
+.youtube-box {
+    display: flex;
+    flex: 1;
+    position: relative;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for youtube.img---*/
+.youtube {
+    position: absolute;
+    width: 280px;
+    margin-top: 90px;
+    margin-left: 180px;
+    cursor: pointer;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for hover effect on twitch.img---*/
+.twitch-box :hover {
+    width: 300px;
+}
+
+/*----------INDEX.HTML-----------*/
+/*---css for hover effect on youtube.img---*/
+.youtube-box :hover {
+    width: 300px;
+}
+
+/*----------All PAGES-----------*/
+/*---css for the footer of all the pages---*/
+.footer {
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    flex: 1;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    height: 100px;
+    margin-top: 101px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    z-index: 200;
+}
+
+/*----------All PAGES-----------*/
+/*---css for the icons inside the footer - in all the pages---*/
+.icons {
+    width: 50px;
+    margin-right: 50px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin: 20px
+}
+
+/*----------All PAGES-----------*/
+/*---css for the hover effects on icons inside the footer - in all the pages---*/
+.socials :hover {
+    width: 51px;
+}
+
+/*----------All PAGES-----------*/
+/*---css for the text inside the footer - in all the pages---*/
+ .footer-text {
+    margin-left: 150px;
+ }
+
+
+
+/*--->>>>>>>>>>>>>>><<<<<<<<<<<<<<<---*/
+/*-------------league.html-----------*/
+.league-grid {
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 280px 200px 220px 1fr;
+    border: 2px orange;
+    border-style: solid;
+    place-content: center;
+    margin-top: 120px;
+}
+
+.desc-league {
+    display: flex;
+    flex: 1;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.league-text {
+    font-size: 22px;
+    text-align: justify;
+    line-height: 35px;
+    font-weight: 500;
+}
+
+.desc-tourney {
+    display: block;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 40px;
+}
+
+.solo-header {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    color: orange;
+}
+
+.solo-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.solo-format {
+    display: block;
+    position: relative;
+    width: 1100px;
+    height: 400px;
+    justify-content: center;
+}
+
+.bracket-img-box {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.bracket-img {
+    width: 1200px;
+}
+
+.format-header {
+    display: flex;
+    justify-content: center;
+    color: orange;
+    font-size: 20px;
+}
+.format-text {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 30px;
+    padding-bottom: 20px;
+    text-align: justify;
+}
+
+.points {
+    display: flex;
+    justify-content: center;
+}
+
+.points-table {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 22px;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: center;
+    padding: 8px;
+}
+
+.league-compete-button-box {
+    display: flex;
+    justify-content: center;
+}
+
+.compete-league {
+    z-index: 100;
+    font-size: 35px;
+    font-weight: 900;
+    color: orange;
+    text-align: center;
+    text-decoration: none;
+}
+
+.league-compete-button-box :hover {
+    text-decoration: underline;
+    color: orange;
+    transition: 0.2s;
+}
+
+/*--->>>>>>>>>>>>>>><<<<<<<<<<<<<<<---*/
+/*-------------compete.html-----------*/
+
+.read-first-box {
+    display: flex;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    flex-direction: column;
+}
+
+
+li {
+    font-size: 20px;
+    line-height: 40px;
+}
+
+.compete-form {
+    background-color: rgb(201, 201, 201);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+.gender-box {
+    display: grid;
+    grid-template-columns: 80px 50px;
+    grid-template-rows: 40px 40px;
+}
+
+.gender-id {
+    margin-top: 10px;
+}
+
+
+
+
+/*--->>>>>>>>>>>>>>><<<<<<<<<<<<<<<---*/
+/*-------------about-us.html-----------*/
+
+.about-us-box {
+    display: block;
+    margin-left: 300px;
+    margin-right: 300px;
+    position: relative;
+}
+
+.we-are-box {
+    display: flex;
+    flex: 1;
+    margin-bottom: 50px;
+}
+
+.logo-box-about-us {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 20px;
+    padding-top: 50px;
+}
+
+.logo-about-us {
+    display: flex;
+    flex: 1;
+    position: relative;
+    padding: 10px;
+}
+
+.about-us-textbox {
+    display: block;
+    position: relative;
+    margin-top: 150px;
+    padding: 20px;
+}
+
+.we-are-text {
+    text-align: justify;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 40px;
+}
+
+
+.myt-redb-box {
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.our-sponsors {
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+}
+
+.our-sponsor-text {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.sponsors-logo {
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    margin-top: 50px;
+}
+
+.myt-redb-box {
+    display: block;
+    position: relative;
+    justify-content: center;
+}
+
+.myt {
+    display: flex;
+    flex: 1;
+    margin-left: 285px;
+}
+
+.redb {
+    width: 280px;
+    display: flex;
+    flex: 1;
+    margin-left: 125px;
+}
+
+
+.socials-box {
+    margin-top: 180px;
+    display: block;
+    position: relative;
+}
+
+.socials-text-box {
+    display: flex;
+    justify-content: center;
+}
+
+.our-socials-text {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.social-links {
+    display: flex;
+    flex: 1;
+    justify-content: space-between;
+}
+
+.icon-box {
+    display: flex;
+    flex: 1;
+    position: relative;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+.social-icons-1 {
+    width: 150px;
+    margin-left: 200px;
+    margin-right: 100px;
+    margin-top: 50px;
+}
+
+.social-icons-2 {
+    width: 150px;
+    margin-top: 50px;
+}
+
+.social-icons-3 {
+    width: 150px;
+    margin-left: 100px;
+    margin-right: 200px;
+    margin-top: 50px;
+}
+
+.social-icons-4 {
+    width: 250px;
+    margin-left: 310px;
+    margin-top: 100px;
+}
+
+.social-icons-5 {
+    width: 250px;
+    margin-right: 310px;
+    margin-top: 100px;
+}
+
+.about-us-footer-box {
+    display: block;
+    width: 100%;
+}
+
+.about-us-footer {
+    margin: 0;
+    margin-top: 120px;
+    position: relative;
+    display: flex;
+    flex: 1;
+    height: 100px;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(27, 27, 27);
+    color: white;
+    z-index: 200;
+}
+
+/*--->>>>>>>>>>>>>>><<<<<<<<<<<<<<<---*/
+/*-------------contact-us.html-----------*/
+
+/*---css for the box containing the form---*/
+.contact-us-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/*---css for the form---*/
+.contact-form {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 600px;
+    border-radius: 10px;
+}
+
+/*---css for the form's header---*/
+form h2 {
+    color: orange;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+/*---css for the "text/input boxes in the form---*/
+form input, form textarea {
+    border: 1px rgb(27, 27, 27);
+    margin: 10px;
+    padding: 20px;
+    outline: none;
+    font-size: 18px;
+}
+
+/*---css for the form submit button---*/
+form button {
+    padding: 15px;
+    background-color: orange;
+    color: white;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    cursor: pointer;
+    margin: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

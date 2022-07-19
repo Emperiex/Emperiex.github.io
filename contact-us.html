@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>PUBG ML- CONTACT US</title>
+</head>
+
+<body>
+    <div class="header">
+
+        <!-- ---flex box to contain logo - inside header--- -->
+            <div class="logo-box">
+                <a href="index.html"><img class="logo" src="images/PUBG-ML-01.png"></a>
+            </div>
+    
+        <!-- ---nav-menu right to the logo - inside header--- -->
+            <div class="nav-menu">
+    
+            <!-- ---nav-links inside nav-menu - inside header--- -->
+                <div class="nav-links"><a href="index.html">HOME</a></div>
+                <div class="nav-links"><a href="league.html">LEAGUE</a></div>
+                <div class="nav-links"><a href="compete.html">COMPETE</a></div>
+                <div class="nav-links"><a href="about-us.html">ABOUT US</a></div>
+                <div class="nav-links"><a href="contact-us.html">CONTACT US</a></div>
+            </div>
+        
+    </div>
+    
+    <!-- ---box for "contacting-us" elements - contains the form--- -->
+    <div class="contact-us-box">
+
+        <!-- ---form element--- -->
+        <form class="contact-form">
+            <h2>CONTACT US</h2>
+            <input type="text" id="name" placeholder="Your Name" required>
+            <input type="email" id="email" placeholder="Email Address" required>
+            <input type="text" id="phone" placeholder="Phone no." required>
+            <textarea id="message" rows="5" placeholder="How can we help you?"></textarea>
+            <button type="submit" onclick="saveData()">Submit</button>
+        </form>
+    </div>
+
+    <!-- ---javasript to save the form on local storage and display message--- -->
+    <script>
+        function saveData()
+        {
+            let name,email,phone,message;
+            name=document.getElementById("name").value;
+            email=document.getElementById("email").value;
+            phone=document.getElementById("phone").value;
+            message=document.getElementById("message").value;
+
+            localStorage.setItem("name",name)
+            localStorage.setItem("email",email)
+            localStorage.setItem("phone",phone)
+            localStorage.setItem("message",message)
+
+            alert("Message enquiry sent successfully.")
+           
+        }
+    </script>
+
+    <!-- ---footer - found on all pages--- -->
+    <div class="footer">
+        <div>
+        <a class="socials" href="https://www.instagram.com/" target="_blank"><img class="icons" src="images/facebook logo bnw-01.png"></a>
+        <a class="socials" href="https://www.facebook.com/" target="_blank"><img class="icons" src="images/instagram logo bnw-01-01.png"></a>
+        <a class="socials" href="https://twitter.com/" target="_blank"><img class="icons" src="images/twitter logo bnw-01-01.png"></a> 
+        </div>
+        <p class="footer-text">PUBG ML 2022</p>
+    </div>
+
+</body>
+</html>

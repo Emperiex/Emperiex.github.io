@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <title>PUBG ML- COMPETE</title>
+</head>
+
+<body>
+
+<!-- ---header element to be on all pages--- -->
+    <div class="header">
+
+    <!-- ---flex box to contain logo - inside header--- -->
+        <div class="logo-box">
+            <a href="index.html"><img class="logo" src="images/PUBG-ML-01.png"></a>
+        </div>
+
+    <!-- ---nav-menu right to the logo - inside header--- -->
+        <div class="nav-menu">
+
+        <!-- ---nav-links inside nav-menu - inside header--- -->
+            <div class="nav-links"><a href="index.html">HOME</a></div>
+            <div class="nav-links"><a href="league.html">LEAGUE</a></div>
+            <div class="nav-links"><a href="compete.html">COMPETE</a></div>
+            <div class="nav-links"><a href="about-us.html">ABOUT US</a></div>
+            <div class="nav-links"><a href="contact-us.html">CONTACT US</a></div>
+        </div>
+    
+    </div>
+
+    <!-- ---content box for page--- -->
+    <div class="read-first-box"><!--css line 417-->
+
+        <div class="read-first-text">
+        <h2>Read First</h2><!--Header-->
+        <li><!--List -css line 428-->
+            All players must be 15 or above.
+        </li>
+        <li>
+            Failure to attend venue will result and disqualification.
+        </li>
+        <li>
+            Venue will be communicated after registration and fees payment.
+        </li>
+        <li>
+            WIFI connection and access to electrical outlet will be provided.
+        </li>
+        <li>
+            Refund are not allowed.
+        </li>
+        <li>
+            All players are to bring their own gears. 
+            <ul><!--"sub" list-->
+                <li>SmartPhone</li>
+                <li>Earphones</li>
+                <li>Charger</li>
+                <li>Accessories</li>
+            </ul>
+        </li>
+        </div>
+
+        <div class="contact-us-box">
+            <form class="compete-form"><!--form - css line 433-->
+                <h2>PLAYER"S FORM</h2>
+                <!--(-->
+                <input type="text" id="name" placeholder="SURNAME Name" required>
+                <input type="email" id="email" placeholder="Email Address" required>
+                <input type="text" id="phone" placeholder="Phone no." required>
+                <input type="text" id="pubgid" placeholder="PUBG ID" required>
+                <p>Date of Birth:</p>
+                <input type="date" id="dateofbirth" required>
+                <p>Gender:</p>
+                <div class="gender-box"><!--css line 442-->
+                    <input type="radio" id="gender" required>
+                    <label class="gender-id" for="gender">Male</label><!--css line 448-->
+                    <input type="radio" id="gender" required>
+                    <label class="gender-id" for="gender">Female</label><!--css line 448-->
+                </div>
+                <button onclick="saveData()">Submit</button>
+                <!--) input on the form-->
+            </form>
+        </div>
+
+    </div>
+
+    <!--javascript - function to save form data on local storage-->
+    <script>
+        function saveData()
+        {
+            let name,email,phone,pubgid,dateofbirth,gender;
+            name=document.getElementById("name").value;
+            email=document.getElementById("email").value;
+            phone=document.getElementById("phone").value;
+            pubgid=document.getElementById("[pubgid").value;
+            dateofbirth=document.getElementById("dateofbith").value;
+            gender=document,getElementById("gender").value;
+            
+            localStorage.setItem("name",name)
+            localStorage.setItem("email",email)
+            localStorage.setItem("phone",phone)
+            localStorage.setItem("pubgid",pubgid)
+            localStorage.setItem("dateofbirth",dateobirth)
+            localStorage.setItem("gender",gender)
+
+            alert("Form successfully send. We will contact you for information about fees and vebue.")
+        }
+    </script>
+
+    
+
+    <div class="about-us-footer-box">
+        <div class="about-us-footer">
+            <div>
+            <a class="socials" href="https://www.instagram.com/" target="_blank"><img class="icons" src="images/facebook logo bnw-01.png"></a>
+            <a class="socials" href="https://www.facebook.com/" target="_blank"><img class="icons" src="images/instagram logo bnw-01-01.png"></a>
+            <a class="socials" href="https://twitter.com/" target="_blank"><img class="icons" src="images/twitter logo bnw-01-01.png"></a> 
+            </div>
+            <p class="footer-text">PUBG ML 2022</p>
+        </div>
+    </div>
+    
+</body>
+
+</html>
+
